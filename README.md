@@ -52,4 +52,11 @@ Dengan penjelasan bahwa transaksi memiliki diskon lebih dari 10%, barang justru 
 - Dan yang terakhir adalah melakukan Outliers Handling menggunakan z-score pada semua feature dengan hasil jumlah baris sebelum outlier dihilangkan: 10999 dan jumlah baris setelah memfilter outlier: 10642.<br>
 
 # Summary Stage 3
-Untuk Stage 3 ini kami melakukan modeling dengan data yang sudah diolah pada stage 2 dengan kriteria data yang masih original, data yang sudah di log transform, data yang sudah diremove outlier menggunakan algoritma Classification seperti Logistik Regresi, K-NN, Decision Tree, Random Forest, XGBoost, dan AdaBoost.
+Untuk Stage 3 ini kami melakukan modeling dengan data yang sudah diolah pada stage 2 dengan kriteria data yang masih original, data yang sudah di log transform, data yang sudah diremove outlier.<br>
+Dengan melakukan tahapan:<br>
+• Split features & target<br>
+• Split data into data train & data test<br>
+• Train model dengan algoritma yang berbeda seperti Logistic Regression, Random Forest, XGBoost & AdaBoost<br>
+• Evaluate model menggunakan Recall, Precision & AUC<br>
+• Validate model menggunakan train dan test accuracy <br>
+• Hyperparameter tuning<br>
