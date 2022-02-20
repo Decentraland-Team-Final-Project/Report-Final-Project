@@ -1,11 +1,5 @@
 # Report-Final-Project - Data Set E-Commerce Shipping
 ## Kelompok 8 : Decentraland
-**Anggota Kelompok:**
-- Dharma Setiawan
-- Ilham Ibnu A.
-- M. Farhan Atmawinanda
-- Fikri Diva S.
-- Ahmad Ilham H.
 
 # Summary Stage 1
 Pada stage 1 kami melakukan Exploratory Data Analysis pada Data Set E-Commerce Shipping dengan hasil pada statistik deskriptif sebagai berikut:
