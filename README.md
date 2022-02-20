@@ -32,11 +32,11 @@ Dengan penjelasan bahwa transaksi memiliki diskon lebih dari 10%, barang justru 
 > Solusi : Lebih ke masalah teknis operasional pengiriman, diskon yang besar menyebabkan transaksi pembelian overloaded dan berpotensi menyebabkan barang terlambat. Harus dicari tahu teknis operasional (moda pengiriman, gudang, dan importansi produk) apa yang paling berpotensi besar terjadinya pengiriman yang terlambat. 
 
 # Summary Stage 2
-Pada tahap ini kami melakukan Data Preprocessing dengan diawali melakukan Feature Encoding pada feature 'Warehouse_Block', 'Mode_of_Shipment', 'Product_Importance', 'Gender'. Dan One hot encoding pada feature 'Warehouse_Block', 'Mode_of_Shipment'
+Pada tahap ini kami melakukan Data Preprocessing dan karena pada dataset ini kita tidak memiliki data duplikat dan missing value maka langsung melakukan Feature Encoding pada feature 'Warehouse_Block', 'Mode_of_Shipment', 'Product_Importance', 'Gender'. Dan One hot encoding pada feature 'Warehouse_Block', 'Mode_of_Shipment'
 Kemudian dilanjutkan dengan melakukan Log/Exp Transformation pada feature 'Discount_Offered' dan 'Prior_Purchases'.
 Setelah itu melakukan teknik Standardization pada feature 'Weight_in_gms'.
 Dan yang terakhir adalah melakukan Outliers Handling menggunakan z-score pada semua feature dengan hasil jumlah baris sebelum outlier dihilangkan: 10999 dan jumlah baris setelah memfilter outlier: 10642
 
 
 # Summary Stage 3
-Untuk Stage 3 ini kami melakukan modeling dengan data yang sudah diolah pada stage 2 dengan kriteria data yang masih original, data yang sudah di log transform, data yang sudah diremove outlier. Dan kemudian kami memilih 5 model terbaik yaitu:
+Untuk Stage 3 ini kami melakukan modeling dengan data yang sudah diolah pada stage 2 dengan kriteria data yang masih original, data yang sudah di log transform, data yang sudah diremove outlier. 
