@@ -38,4 +38,4 @@ Dan yang terakhir adalah melakukan Outliers Handling menggunakan z-score pada se
 
 
 # Summary Stage 3
-Untuk Stage 3 ini kami melakukan modeling dengan data yang sudah diolah pada stage 2 dengan kriteria data yang masih original, data yang sudah di log transform, data yang sudah diremove outlier. 
+Untuk Stage 3 ini kami melakukan modeling dengan data yang sudah diolah pada stage 2 dengan kriteria data yang masih original, data yang sudah di log transform, data yang sudah diremove outlier menggunakan algoritma Classification seperti Logistik Regresi, K-NN, Decision Tree, Random Forest, XGBoost, dan AdaBoost.
