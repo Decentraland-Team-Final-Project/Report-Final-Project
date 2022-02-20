@@ -1,4 +1,5 @@
 # Report-Final-Project - Data Set E-Commerce Shipping
+Data source : https://www.kaggle.com/prachi13/customer-analytics
 ## Kelompok 8 : Decentraland
 
 # Summary Stage 1
