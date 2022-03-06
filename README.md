@@ -7,6 +7,14 @@ Data source : https://www.kaggle.com/prachi13/customer-analytics
 • Dari beberapa feature yang ada, mencoba untuk membuat model prediksi apakah shipping deliveries akan diterima telat atau tepat waktu pada customers <br>
 • Memberikan analisis rekomendasi/solusi dan keuntungan apa saja yang bisa diperoleh jika performa model yang kita bangun memuaskan. 
 
+## Business Background
+Decentraland adalah sebuah perusahaan e-commerce yang menjual berbagai produk elektronik. 
+Sebagai perusahaan data science consultant independen, kami di-hire oleh Decentraland untuk mengolah suatu data set shipment. Kami diminta untuk mencari solusi bagaimana cara mengatasi permasalahan yang mereka punya melalui data set tersebut.
+
+## Problem Statement
+Data set E-Commerce Shipping menunjukan bahwa dari 10.999 sampel transaksi pembelian online, 59.7% transaksi diantaranya masih terjadi keterlambatan waktu pengiriman barang.
+Keterlambatan yang tinggi ini tentunya berkaitan dengan customer happiness dan potential revenue. Customer akan mendapatkan experience yang kurang baik dalam menggunakan layanan Decentraland. Keterlambatan ini juga menyebabkan company mengalami potential revenue loss.
+
 ## Summary Stage 1
 Pada stage 1 kami melakukan Exploratory Data Analysis pada Data Set E-Commerce Shipping dengan Data Set:
 | Variable | Type | Definition | Example |
