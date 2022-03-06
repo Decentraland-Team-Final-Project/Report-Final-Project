@@ -1,6 +1,15 @@
 # Report-Final-Project - Data Set E-Commerce Shipping
 Data source : https://www.kaggle.com/prachi13/customer-analytics
 ## Kelompok 8 : Decentraland
+### Mentor
+1.  [Gerry Chandra Zheng](https://www.linkedin.com/in/gerrychandra/).
+### Member
+1. [Dharma Setiawan](https://www.linkedin.com/in/dharma-setiawan/).
+2. [Muhammad Farhan Atmawinanda](https://www.linkedin.com/in/atmawinanda/).
+3. [Fikri Diva Sambasri](https://www.linkedin.com/in/fikridivasambasri/).
+4. [Ahmad Ilham Habibi](https://www.linkedin.com/in/ahmad-ilham-habibi-886b4b123/).
+5. [Ilham Ibnu Affan](https://www.linkedin.com/in/ilhamibnuaffan/).
+
 ## **Project Overview** 
 • Mencari insight dari dataset dengan Exploratory Data Analysis (EDA) <br>
 • Melakukan data cleansing, data processing, data engineering untuk menyiapkan data sebelum modeling (Pre-Processing) <br>
@@ -17,8 +26,7 @@ Keterlambatan yang tinggi ini tentunya berkaitan dengan customer happiness dan p
 
 ![problem statement](https://user-images.githubusercontent.com/45113535/156904411-51d1656b-4649-4f39-886e-e169e37ef50b.jpg)
 
-
-## Summary Stage 1
+## Exploratory Data Analysis
 Pada stage 1 kami melakukan Exploratory Data Analysis pada Data Set E-Commerce Shipping dengan Data Set:
 | Variable | Variable Rename | Type | Definition | Example |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -34,6 +42,18 @@ Pada stage 1 kami melakukan Exploratory Data Analysis pada Data Set E-Commerce S
 | Discount_Offered | Discount | Discrete | Product Discount in US Dollars | 65, 10, 16
 | Weight_in_gms | Weight (gram) | Continous | Product Weight in grams | 4953, 5676, 2171
 | Late_Shipment | Late | Nominal | Target Variable, 1: NOT reached on time - 0: REACHED on time | 1, 0<br>
+
+1. Distribusi Data Variabel Numerik
+![distribusi variabel numerik](https://user-images.githubusercontent.com/45113535/156906405-c34b9a72-6062-4fc4-a646-2c5afd76a93c.jpg)
+- Variabel Calls dan Cost sudah cukup simetrik distribusinya mendekati distribusi normal (mean dan median tidak berbeda jauh).
+- Variabel Discount pola persebarannya membentuk positively skewed (mean>median), sedangkan variabel Weight (gram) membentuk negatively skewed (median>mean).
+
+2. Fitur yang tidak mempengaruhi keterlambatan
+![shipment](https://user-images.githubusercontent.com/45113535/156906657-a96e0aac-134a-4410-bad1-5e830ca6996f.png)
+![warehouse](https://user-images.githubusercontent.com/45113535/156906668-2260dfff-e034-47a2-b4d7-dd3f60481ba0.png)
+![purchases](https://user-images.githubusercontent.com/45113535/156906674-b324a9a6-701c-4ff3-ae96-6dd83eb9ac62.png)
+![calls](https://user-images.githubusercontent.com/45113535/156906678-c8fb25c9-4ff0-4842-a83f-7b39132d9649.png)
+
 
 Dengan hasil pada statistik deskriptif sebagai berikut:
 - Data terdiri dari 10.999 sampel (baris).
