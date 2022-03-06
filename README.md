@@ -49,12 +49,43 @@ Pada stage 1 kami melakukan Exploratory Data Analysis pada Data Set E-Commerce S
 - Variabel Discount pola persebarannya membentuk positively skewed (mean>median), sedangkan variabel Weight (gram) membentuk negatively skewed (median>mean).
 
 2. Fitur yang tidak mempengaruhi keterlambatan
-![shipment](https://user-images.githubusercontent.com/45113535/156906657-a96e0aac-134a-4410-bad1-5e830ca6996f.png)
-![warehouse](https://user-images.githubusercontent.com/45113535/156906668-2260dfff-e034-47a2-b4d7-dd3f60481ba0.png)
-![purchases](https://user-images.githubusercontent.com/45113535/156906674-b324a9a6-701c-4ff3-ae96-6dd83eb9ac62.png)
-![calls](https://user-images.githubusercontent.com/45113535/156906678-c8fb25c9-4ff0-4842-a83f-7b39132d9649.png)
+![shipment](https://user-images.githubusercontent.com/45113535/156906905-60675a6c-5cd6-4252-9cc7-922243fe23f6.jpg)
+![warehouse](https://user-images.githubusercontent.com/45113535/156906961-484e31db-8e09-4d0d-bf8e-b781cffde792.jpg)
+![purchases](https://user-images.githubusercontent.com/45113535/156906970-4e4511c9-a068-4fd3-a2e1-7a8182db40fe.jpg)
+![calls](https://user-images.githubusercontent.com/45113535/156906975-9885245b-740e-4dc4-be55-e19c00d58fb7.jpg)
+![importance](https://user-images.githubusercontent.com/45113535/156907055-469244f3-f58e-4622-a32a-bc1ef72e8357.jpg)
+- Customer care calls, shipment, warehouse block, product importance, dan prior purchase memiliki ratio yang kurang lebih sama. Maka dari itu, kami tidak menganalisis lebih lanjut.
+- Permasalahan keterlambatan tidak disebabkan oleh fitur-fitur diatas
 
+3. Fitur-Fitur yang Berpengaruh terhadap Keterlambatan
+![fitur berpengaruh](https://user-images.githubusercontent.com/45113535/156907118-209391e7-de2b-4ae5-9a60-60c675e9abf6.jpg)
+- Discount yang lebih dari 10 persen terkonfirmasi terlambat. Hal ini bisa mengindikasikan beberapa bulan dimana promo diberikan besar-besaran sehingga pengiriman mengalami keterlambatan.
+- Berat barang yang berkisar 2-4 kg terkonfirmasi terlambat. Hal ini mengindikasikan bahwa ada kemungkinan banyak customer membeli barang-barang kategori ringan.
 
+4. Korelasi fitur
+
+![korelasi fitur](https://user-images.githubusercontent.com/45113535/156907198-cacbe402-e2a2-41ff-bf31-b10d7072e179.jpg)
+- Feature Discount dan Weight adalah 2 fitur yang paling berkorelasi dengan feature target yaitu Late.
+- Tidak ada feature yang redundant di dataset ini.
+
+## Data Preprocessing
+![data preprocessing](https://user-images.githubusercontent.com/45113535/156907226-d390476a-1c45-4adc-bee7-b614af1cfb73.jpg)
+
+keterangan:
+- Dataset1 : Dataset original
+- Dataset2 : Dataset dengan penghapusan outlier menggunakan z-score
+- Dataset3 : Dataset dengan penghapusan outlier menggunakan IQR
+
+## Model Evaluation Terbaik
+![model evaluasi](https://user-images.githubusercontent.com/45113535/156907297-ec7ef83d-7279-42c5-ad1a-e75045783215.jpg)
+- Dataset 1 boosting hyperparameter Adaboost menghasilkan performa terbaik (AUC Data Training lebih besar daripada AUC Data Testing dengan gap perbedaan yang dekat dan nilainya relatif lebih tinggi dibandingkan hasil di dataset 2 dan 3).
+
+## Business Insight & Recomendation
+1. Banyak sekali delays yang terjadi pada order dengan diskon diatas 10%. Hal ini dapat diantisipasi dengan memberikan notifikasi kepada pelanggan ketika terjadi diskon yang besar seperti “Harbolnas” yang memungkinkan barang tidak terkirim dengan tepat waktu.
+Kami juga menyarankan untuk membuat chatbot khusus untuk menangani pertanyaan-pertanyaan dari customer. Chatbot ini dapat menjawab pertanyaan-pertanyaan dari customer. Customer akan tetap puas karena pertanyaan-pertanyaan mereka terjawab.
+2. Berat barang antara 2-4 kg mengalami keterlambatan yang signifikan. Pihak decentraland perlu untuk memberi notifikasi kepada pembeli di rentang tersebut seperti barang akan terlambat x hari sebelum pelanggan menekan tombol buy. Selanjutnya, menurut Desy (2019), pihak e-commerce perlu memberikan voucher sebagai pengganti keterlambatan. Pihak e-commerce juga dapat memberikan promo voucher/kupon apabila barang yang terprediksi on time ternyata late. Hal ini dapat mengurangi customer pain point dan membuat customer tetap puas dan tetap berbelanja di e-commerce Decentraland. Percobaan voucher ini bisa dibilang lumayan risky dan membuat customer ketergantungan sehingga kami memutuskan untuk melakukan AB Testing.
+
+<!--
 Dengan hasil pada statistik deskriptif sebagai berikut:
 - Data terdiri dari 10.999 sampel (baris).
 - Tidak ada null value di semua kolom.
@@ -91,4 +122,4 @@ Adapun dalam proses mencoba sebuah algorithma dan model, kami menetapkan syarat 
 • Hyperparameter yang digunakan pada Hyperparameter Tuning Random Forrest adalah 'n_estimators', 'bootstrap', 'criterion', 'max_depth', 'min_samples_split', 'min_samples_leaf', 'max_features', dan 'n_jobs'.<br>
 • Hyperparameter yang digunakan pada Hyperparameter Tuning AdaBoost adalah 'n_estimators', 'learning_rate', dan 'algorithm'.<br>
 • Hyperparameter yang digunakan pada Hyperparameter Tuning XGBoost adalah 'max_depth', 'min_child_weight', 'gamma', 'tree_method', 'colsample_bytree',  'eta',  'lambda', dan 'alpha'.<br>
-
+-->
