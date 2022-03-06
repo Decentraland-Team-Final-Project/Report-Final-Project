@@ -15,22 +15,25 @@ Sebagai perusahaan data science consultant independen, kami di-hire oleh Decentr
 Data set E-Commerce Shipping menunjukan bahwa dari 10.999 sampel transaksi pembelian online, 59.7% transaksi diantaranya masih terjadi keterlambatan waktu pengiriman barang.
 Keterlambatan yang tinggi ini tentunya berkaitan dengan customer happiness dan potential revenue. Customer akan mendapatkan experience yang kurang baik dalam menggunakan layanan Decentraland. Keterlambatan ini juga menyebabkan company mengalami potential revenue loss.
 
+![problem statement](https://user-images.githubusercontent.com/45113535/156904411-51d1656b-4649-4f39-886e-e169e37ef50b.jpg)
+
+
 ## Summary Stage 1
 Pada stage 1 kami melakukan Exploratory Data Analysis pada Data Set E-Commerce Shipping dengan Data Set:
-| Variable | Type | Definition | Example |
-| ----------- | ----------- | ----------- | ----------- |
-| ID | Nominal | Customer ID Number | 10, 15, 10995, 10996
-| Warehouse_Block | Nominal | Warehouse to Store the Product | A, B, C, D, F
-| Mode_of_Shipment | Nominal | Mode of Product Shipping | Flight, Road, Ship
-| Customer_Care_Calls | Discrete | Number of Calls Made | 1, 2, 5, 6
-| Customer_Rating | Ordinal | Company Rating by Customers | 5: Best - 4: Better - 3: Neutral - 2: Bad - 1: Worst
-| Cost_of_The_Product | Discrete | Cost of Product in US Dollars | 177, 216, 236, 182
-| Prior_Purchases | Discrete | Number of Prior Purchase | 3, 2, 6
-| Product_Importance | Ordinal | Product Importance Parameter | Low, Medium, High
-| Gender | Nominal | Customer Gender | Male, Female
-| Discount_Offered | Discrete | Product Discount in US Dollars | 65, 10, 16
-| Weight_in_gms | Continous | Product Weight in grams | 4953, 5676, 2171
-| Late_Shipment | Nominal | Target Variable, 1: NOT reached on time - 0: REACHED on time | 1, 0<br>
+| Variable | Variable Rename | Type | Definition | Example |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| ID | ID | Nominal | Customer ID Number | 10, 15, 10995, 10996
+| Warehouse_Block | Warehouse | Nominal | Warehouse to Store the Product | A, B, C, D, F
+| Mode_of_Shipment | Shipment | Nominal | Mode of Product Shipping | Flight, Road, Ship
+| Customer_Care_Calls | Calls | Discrete | Number of Calls Made | 1, 2, 5, 6
+| Customer_Rating | Rating | Ordinal | Company Rating by Customers | 5: Best - 4: Better - 3: Neutral - 2: Bad - 1: Worst
+| Cost_of_The_Product | Cost | Discrete | Cost of Product in US Dollars | 177, 216, 236, 182
+| Prior_Purchases | Purchases | Discrete | Number of Prior Purchase | 3, 2, 6
+| Product_Importance | Importance | Ordinal | Product Importance Parameter | Low, Medium, High
+| Gender | Gender | Nominal | Customer Gender | Male, Female
+| Discount_Offered | Discount | Discrete | Product Discount in US Dollars | 65, 10, 16
+| Weight_in_gms | Weight (gram) | Continous | Product Weight in grams | 4953, 5676, 2171
+| Late_Shipment | Late | Nominal | Target Variable, 1: NOT reached on time - 0: REACHED on time | 1, 0<br>
 
 Dengan hasil pada statistik deskriptif sebagai berikut:
 - Data terdiri dari 10.999 sampel (baris).
